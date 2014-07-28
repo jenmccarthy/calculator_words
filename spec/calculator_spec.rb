@@ -33,4 +33,8 @@ describe ("calculator") do
   it("will take an expression starting with an exponent and calculate it") do
     expect(calculator("What is 4 to the 2nd power plus 7?")).to(eq(23))
   end
+
+  it("will take multiple questions and return the calculation of each") do
+    expect(calculator("What is 2 plus 3? What is 8 divided by 4?")).to(eq([5, 2]))
+  end
 end
